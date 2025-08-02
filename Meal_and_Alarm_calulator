@@ -1,0 +1,37 @@
+
+# Principles of Programming - Module 3: Critical Thinking
+# Andre Phillips, Colorado State University - Global
+# CSC500-1
+# Dr. Steven Evans
+# August 2, 2025
+
+##Part 1: Meal Time Calculator
+# Write a program that calculates the total amount of a meal purchased at a restaurant. \
+# The program should ask the user to enter the charge for the food and then calculate the amounts with an 18 percent tip and 7 percent sales tax. \
+# Display each of these amounts and the total price.
+
+print("Welcome to the Meal Time Calculator!")
+input_charge = float(input("Enter the charge for the food: $"))
+tip_rate = 0.18
+tax_rate = 0.07
+tip_amount = input_charge * tip_rate
+tax_amount = input_charge * tax_rate
+
+total_amount = input_charge + tip_amount + tax_amount
+if (tip_amount > 0) and (tax_amount > 0):  # Short circuit example
+    print("Both numbers are positive.")
+print(f"Tip amount: ${tip_amount:.2f}")
+print(f"Tax amount: ${tax_amount:.2f}")
+print(f"Total amount: ${total_amount:.2f}")     
+
+# Part 2: Alarm Time Calculator
+# Many people keep time using a 24-hour clock (11 is 11am and 23 is 11pm, 0 is midnight).\
+# If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm). \
+# Write a Python program to solve the general version of the above problem. Ask the user for the time now (in hours) and then ask for the number of hours to wait for the alarm.\
+# Your program should output what the time will be on a 24-hour clock when the alarm goes off.
+
+print("\nWelcome to the Alarm Time Calculator!")
+current_time = int(input("Enter the current time (in hours, 0-23): "))
+hours_to_wait = int(input("Enter the number of hours to wait for the alarm: "))
+alarm_time = (current_time + hours_to_wait) % 24
+print(f"The alarm will go off at {alarm_time}:00.")
