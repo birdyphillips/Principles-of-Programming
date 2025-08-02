@@ -5,12 +5,12 @@
 # Dr. Steven Evans
 # August 2, 2025
 
-##Part 1: Meal Time Calculator
+##Part 1: Meal Cost Calculator
 # Write a program that calculates the total amount of a meal purchased at a restaurant. \
 # The program should ask the user to enter the charge for the food and then calculate the amounts with an 18 percent tip and 7 percent sales tax. \
 # Display each of these amounts and the total price.
 
-print("Welcome to the Meal Time Calculator!")
+print("Welcome to the Meal Cost Calculator!")
 input_charge = float(input("Enter the charge for the food: $"))
 tip_rate = 0.18
 tax_rate = 0.07
