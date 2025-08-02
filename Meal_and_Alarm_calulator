@@ -18,7 +18,7 @@ tip_amount = input_charge * tip_rate
 tax_amount = input_charge * tax_rate
 
 total_amount = input_charge + tip_amount + tax_amount
-if (tip_amount > 0) and (tax_amount > 0):  # Short circuit example
+if (tip_amount > 0) and (tax_amount > 0): 
     print("Both numbers are positive.")
 print(f"Tip amount: ${tip_amount:.2f}")
 print(f"Tax amount: ${tax_amount:.2f}")
